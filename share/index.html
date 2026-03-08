@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>WishKeep – Abriendo lista…</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      background: #0D2421;
+      color: #ffffff;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 24px;
+      text-align: center;
+    }
+    .emoji { font-size: 72px; margin-bottom: 24px; }
+    h1 { font-size: 24px; font-weight: 700; margin-bottom: 12px; }
+    p  { font-size: 16px; color: #ffffffb3; line-height: 1.6; max-width: 340px; }
+    .btn {
+      display: inline-block;
+      margin-top: 32px;
+      padding: 14px 28px;
+      background: #00BFA5;
+      color: #000;
+      border-radius: 999px;
+      font-weight: 700;
+      font-size: 15px;
+      text-decoration: none;
+    }
+    .spinner {
+      width: 40px; height: 40px;
+      border: 3px solid #ffffff33;
+      border-top-color: #00BFA5;
+      border-radius: 50%;
+      animation: spin 0.8s linear infinite;
+      margin: 28px auto 0;
+    }
+    @keyframes spin { to { transform: rotate(360deg); } }
+    .fallback { margin-top: 20px; font-size: 13px; color: #ffffff66; }
+    .fallback a { color: #00BFA5; }
+  </style>
+</head>
+<body>
+  <div class="emoji">🎁</div>
+  <h1 id="title">Abriendo WishKeep…</h1>
+  <p id="desc">Espera un momento mientras abrimos tu lista compartida.</p>
+  <div class="spinner" id="spinner"></div>
+  <a class="btn" id="storeBtn" href="#" style="display:none">Descargar WishKeep</a>
+  <p class="fallback" id="fallback" style="display:none">
+    ¿Ya tienes la app? <a id="appLink" href="#">Abrir directamente</a>
+  </p>
+
+  <script>
+    const PACKAGE   = 'com.wishkeep.wishkeep_app';
+    const PLAY_URL  = 'https://play.google.com/store/apps/details?id=' + PACKAGE;
+
+    // Read ?code= from the URL
+    const params = new URLSearchParams(window.location.search);
+    const code   = params.get('code') || '';
+
+    if (!code) {
+      // No code → go straight to Play Store
+      window.location.replace(PLAY_URL);
+    } else {
+      // Android intent URI:
+      //   intent://share/CODE  →  scheme=wishkeep  →  falls back to Play Store
+      const fallbackEncoded = encodeURIComponent(PLAY_URL);
+      const intentUrl =
+        'intent://share/' + encodeURIComponent(code) +
+        '#Intent;scheme=wishkeep;package=' + PACKAGE +
+        ';S.browser_fallback_url=' + fallbackEncoded + ';end';
+
+      // Custom scheme URI (works on some browsers / iOS future)
+      const schemeUrl = 'wishkeep://share/' + encodeURIComponent(code);
+
+      const isAndroid = /Android/i.test(navigator.userAgent);
+
+      if (isAndroid) {
+        // Try intent URI — if app is installed it opens immediately;
+        // if not, Android follows browser_fallback_url to Play Store.
+        window.location.href = intentUrl;
+      } else {
+        // Non-Android: try custom scheme, then show store button
+        window.location.href = schemeUrl;
+      }
+
+      // After 2.5 s assume app not installed → show manual fallback
+      setTimeout(function () {
+        document.getElementById('spinner').style.display = 'none';
+        document.getElementById('title').textContent = '¿No tienes WishKeep?';
+        document.getElementById('desc').textContent =
+          'Descarga la app gratis y después introduce el código de la lista.';
+
+        const btn = document.getElementById('storeBtn');
+        btn.href = PLAY_URL;
+        btn.style.display = 'inline-block';
+
+        const fallback = document.getElementById('fallback');
+        const appLink  = document.getElementById('appLink');
+        appLink.href = schemeUrl;
+        fallback.style.display = 'block';
+      }, 2500);
+    }
+  </script>
+</body>
+</html>
