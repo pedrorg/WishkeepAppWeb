@@ -64,12 +64,12 @@
       border-radius: 12px; padding: 24px 28px;
     }
     .contact-box p { margin-bottom: 12px; font-size: .95rem; }
-    .contact-box a {
+    .contact-box a.email-btn {
       display: inline-block; background: var(--primary); color: #0D1F1C;
       font-weight: 700; font-size: .95rem; padding: 10px 22px;
       border-radius: 8px; text-decoration: none; margin-top: 4px;
     }
-    .contact-box a:hover { opacity: .9; }
+    .contact-box a.email-btn:hover { opacity: .9; }
     footer {
       border-top: 1px solid var(--border); padding: 28px 40px;
       display: flex; gap: 16px; justify-content: space-between; align-items: center; flex-wrap: wrap;
@@ -85,67 +85,67 @@
 
 <nav>
   <a href="index.html" class="logo">WishKeep</a>
-  <a href="index.html" class="back">← Volver al inicio</a>
+  <a href="index.html" class="back" data-i18n="navBack">← Volver al inicio</a>
 </nav>
 
 <main>
   <div class="doc-header">
-    <h1>Eliminar cuenta</h1>
-    <p>Cómo borrar tu cuenta y todos tus datos de WishKeep</p>
+    <h1 data-i18n="docTitle">Eliminar cuenta</h1>
+    <p data-i18n="docSub">Cómo borrar tu cuenta y todos tus datos de WishKeep</p>
   </div>
 
   <div class="section">
-    <p>Puedes eliminar tu cuenta directamente desde la aplicación en cualquier momento. El proceso es inmediato e irreversible.</p>
+    <p data-i18n="intro">Puedes eliminar tu cuenta directamente desde la aplicación en cualquier momento. El proceso es inmediato e irreversible.</p>
   </div>
 
   <div class="section">
-    <h2>Eliminar desde la app (recomendado)</h2>
+    <h2 data-i18n="s1Title">Eliminar desde la app (recomendado)</h2>
     <div class="steps">
       <div class="step">
         <div class="step-num">1</div>
-        <div class="step-text">Abre WishKeep e inicia sesión con tu cuenta.</div>
+        <div class="step-text" data-i18n="step1">Abre WishKeep e inicia sesión con tu cuenta.</div>
       </div>
       <div class="step">
         <div class="step-num">2</div>
-        <div class="step-text">Ve a la pestaña <strong>Ajustes</strong> (icono de engranaje en la barra inferior).</div>
+        <div class="step-text" data-i18n-html="step2">Ve a la pestaña <strong>Ajustes</strong> (icono de engranaje en la barra inferior).</div>
       </div>
       <div class="step">
         <div class="step-num">3</div>
-        <div class="step-text">Desplázate hasta la sección <strong>Cuenta</strong> y pulsa <strong>"Eliminar cuenta"</strong>.</div>
+        <div class="step-text" data-i18n-html="step3">Desplázate hasta la sección <strong>Cuenta</strong> y pulsa <strong>"Eliminar cuenta"</strong>.</div>
       </div>
       <div class="step">
         <div class="step-num">4</div>
-        <div class="step-text">Confirma tu identidad cuando se te solicite (puede pedirte tu contraseña o inicio de sesión con Google).</div>
+        <div class="step-text" data-i18n="step4">Confirma tu identidad cuando se te solicite (puede pedirte tu contraseña o inicio de sesión con Google).</div>
       </div>
       <div class="step">
         <div class="step-num">5</div>
-        <div class="step-text">Confirma la eliminación en el diálogo de confirmación. Tu cuenta y todos tus datos quedarán borrados de inmediato.</div>
+        <div class="step-text" data-i18n="step5">Confirma la eliminación en el diálogo de confirmación. Tu cuenta y todos tus datos quedarán borrados de inmediato.</div>
       </div>
     </div>
 
     <div class="warning">
-      <p><strong>⚠️ Esta acción es irreversible.</strong> Al eliminar tu cuenta se borrarán permanentemente: todas tus listas de deseos, todos los artículos, tu foto de perfil y tus datos de autenticación. No es posible recuperar los datos tras la eliminación.</p>
+      <p data-i18n-html="warningText"><strong>⚠️ Esta acción es irreversible.</strong> Al eliminar tu cuenta se borrarán permanentemente: todas tus listas de deseos, todos los artículos, tu foto de perfil y tus datos de autenticación. No es posible recuperar los datos tras la eliminación.</p>
     </div>
   </div>
 
   <div class="section">
-    <h2>¿Qué datos se eliminan?</h2>
+    <h2 data-i18n="s2Title">¿Qué datos se eliminan?</h2>
     <ul>
-      <li>Tu cuenta de usuario (Firebase Authentication)</li>
-      <li>Tu perfil: nombre, correo electrónico y foto de perfil</li>
-      <li>Todas las listas de deseos que hayas creado</li>
-      <li>Todos los artículos de tus listas</li>
-      <li>Los códigos de compartición asociados a tus listas</li>
+      <li data-i18n="s2li1">Tu cuenta de usuario (Firebase Authentication)</li>
+      <li data-i18n="s2li2">Tu perfil: nombre, correo electrónico y foto de perfil</li>
+      <li data-i18n="s2li3">Todas las listas de deseos que hayas creado</li>
+      <li data-i18n="s2li4">Todos los artículos de tus listas</li>
+      <li data-i18n="s2li5">Los códigos de compartición asociados a tus listas</li>
     </ul>
-    <p>Las listas compartidas de otros usuarios en las que participabas como invitado no se ven afectadas.</p>
+    <p data-i18n="s2note">Las listas compartidas de otros usuarios en las que participabas como invitado no se ven afectadas.</p>
   </div>
 
   <div class="section">
-    <h2>¿No puedes acceder a la app?</h2>
+    <h2 data-i18n="s3Title">¿No puedes acceder a la app?</h2>
     <div class="contact-box">
-      <p>Si no puedes acceder a tu cuenta o necesitas ayuda para eliminar tus datos, escríbenos a:</p>
-      <a href="mailto:wishkeepapp@gmail.com?subject=Solicitud%20de%20eliminaci%C3%B3n%20de%20cuenta">wishkeepapp@gmail.com</a>
-      <p style="margin-top:14px; font-size:.85rem; color:var(--muted);">Incluye en el mensaje el correo electrónico asociado a tu cuenta. Procesaremos tu solicitud en un plazo máximo de 30 días.</p>
+      <p data-i18n="contactP">Si no puedes acceder a tu cuenta o necesitas ayuda para eliminar tus datos, escríbenos a:</p>
+      <a href="mailto:wishkeepapp@gmail.com?subject=Solicitud%20de%20eliminaci%C3%B3n%20de%20cuenta" class="email-btn">wishkeepapp@gmail.com</a>
+      <p style="margin-top:14px; font-size:.85rem; color:var(--muted);" data-i18n="contactNote">Incluye en el mensaje el correo electrónico asociado a tu cuenta. Procesaremos tu solicitud en un plazo máximo de 30 días.</p>
     </div>
   </div>
 </main>
@@ -153,11 +153,139 @@
 <footer>
   <a href="index.html">WishKeep</a>
   <div style="display:flex;gap:16px;">
-    <a href="privacy.html">Privacidad</a>
-    <a href="terms.html">Términos</a>
+    <a href="privacy.html" data-i18n="footerPrivacy">Privacidad</a>
+    <a href="terms.html" data-i18n="footerTerms">Términos</a>
   </div>
   <p>© 2025 WishKeep</p>
 </footer>
+
+<script>
+const translations = {
+  es: {
+    pageTitle: 'Eliminar cuenta — WishKeep',
+    metaDesc: 'Cómo eliminar tu cuenta y datos de WishKeep.',
+    navBack: '← Volver al inicio',
+    docTitle: 'Eliminar cuenta',
+    docSub: 'Cómo borrar tu cuenta y todos tus datos de WishKeep',
+    intro: 'Puedes eliminar tu cuenta directamente desde la aplicación en cualquier momento. El proceso es inmediato e irreversible.',
+    s1Title: 'Eliminar desde la app (recomendado)',
+    step1: 'Abre WishKeep e inicia sesión con tu cuenta.',
+    step2: 'Ve a la pestaña <strong>Ajustes</strong> (icono de engranaje en la barra inferior).',
+    step3: 'Desplázate hasta la sección <strong>Cuenta</strong> y pulsa <strong>"Eliminar cuenta"</strong>.',
+    step4: 'Confirma tu identidad cuando se te solicite (puede pedirte tu contraseña o inicio de sesión con Google).',
+    step5: 'Confirma la eliminación en el diálogo de confirmación. Tu cuenta y todos tus datos quedarán borrados de inmediato.',
+    warningText: '<strong>⚠️ Esta acción es irreversible.</strong> Al eliminar tu cuenta se borrarán permanentemente: todas tus listas de deseos, todos los artículos, tu foto de perfil y tus datos de autenticación. No es posible recuperar los datos tras la eliminación.',
+    s2Title: '¿Qué datos se eliminan?',
+    s2li1: 'Tu cuenta de usuario (Firebase Authentication)',
+    s2li2: 'Tu perfil: nombre, correo electrónico y foto de perfil',
+    s2li3: 'Todas las listas de deseos que hayas creado',
+    s2li4: 'Todos los artículos de tus listas',
+    s2li5: 'Los códigos de compartición asociados a tus listas',
+    s2note: 'Las listas compartidas de otros usuarios en las que participabas como invitado no se ven afectadas.',
+    s3Title: '¿No puedes acceder a la app?',
+    contactP: 'Si no puedes acceder a tu cuenta o necesitas ayuda para eliminar tus datos, escríbenos a:',
+    contactNote: 'Incluye en el mensaje el correo electrónico asociado a tu cuenta. Procesaremos tu solicitud en un plazo máximo de 30 días.',
+    footerPrivacy: 'Privacidad', footerTerms: 'Términos',
+  },
+  en: {
+    pageTitle: 'Delete account — WishKeep',
+    metaDesc: 'How to delete your WishKeep account and data.',
+    navBack: '← Back to home',
+    docTitle: 'Delete account',
+    docSub: 'How to delete your account and all your WishKeep data',
+    intro: 'You can delete your account directly from the app at any time. The process is immediate and irreversible.',
+    s1Title: 'Delete from the app (recommended)',
+    step1: 'Open WishKeep and sign in to your account.',
+    step2: 'Go to the <strong>Settings</strong> tab (gear icon in the bottom bar).',
+    step3: 'Scroll to the <strong>Account</strong> section and tap <strong>"Delete account"</strong>.',
+    step4: 'Confirm your identity when prompted (you may be asked for your password or Google sign-in).',
+    step5: 'Confirm the deletion in the confirmation dialog. Your account and all your data will be deleted immediately.',
+    warningText: '<strong>⚠️ This action is irreversible.</strong> Deleting your account will permanently erase: all your wishlists, all items, your profile photo and your authentication data. It is not possible to recover data after deletion.',
+    s2Title: 'What data is deleted?',
+    s2li1: 'Your user account (Firebase Authentication)',
+    s2li2: 'Your profile: name, email address and profile photo',
+    s2li3: 'All wishlists you have created',
+    s2li4: 'All items in your lists',
+    s2li5: 'The sharing codes associated with your lists',
+    s2note: 'Shared lists from other users that you participated in as a guest are not affected.',
+    s3Title: 'Can\'t access the app?',
+    contactP: 'If you cannot access your account or need help deleting your data, write to us at:',
+    contactNote: 'Include the email address associated with your account in the message. We will process your request within a maximum of 30 days.',
+    footerPrivacy: 'Privacy', footerTerms: 'Terms',
+  },
+  fr: {
+    pageTitle: 'Supprimer le compte — WishKeep',
+    metaDesc: 'Comment supprimer votre compte et vos données WishKeep.',
+    navBack: '← Retour à l\'accueil',
+    docTitle: 'Supprimer le compte',
+    docSub: 'Comment supprimer votre compte et toutes vos données WishKeep',
+    intro: 'Vous pouvez supprimer votre compte directement depuis l\'application à tout moment. Le processus est immédiat et irréversible.',
+    s1Title: 'Supprimer depuis l\'app (recommandé)',
+    step1: 'Ouvrez WishKeep et connectez-vous à votre compte.',
+    step2: 'Accédez à l\'onglet <strong>Paramètres</strong> (icône d\'engrenage dans la barre inférieure).',
+    step3: 'Faites défiler jusqu\'à la section <strong>Compte</strong> et appuyez sur <strong>« Supprimer le compte »</strong>.',
+    step4: 'Confirmez votre identité lorsque vous y êtes invité (votre mot de passe ou votre connexion Google peuvent vous être demandés).',
+    step5: 'Confirmez la suppression dans la boîte de dialogue de confirmation. Votre compte et toutes vos données seront supprimés immédiatement.',
+    warningText: '<strong>⚠️ Cette action est irréversible.</strong> La suppression de votre compte effacera définitivement : toutes vos listes de souhaits, tous les articles, votre photo de profil et vos données d\'authentification. Il n\'est pas possible de récupérer les données après la suppression.',
+    s2Title: 'Quelles données sont supprimées ?',
+    s2li1: 'Votre compte utilisateur (Firebase Authentication)',
+    s2li2: 'Votre profil : nom, adresse e-mail et photo de profil',
+    s2li3: 'Toutes les listes de souhaits que vous avez créées',
+    s2li4: 'Tous les articles de vos listes',
+    s2li5: 'Les codes de partage associés à vos listes',
+    s2note: 'Les listes partagées d\'autres utilisateurs auxquelles vous participiez en tant qu\'invité ne sont pas affectées.',
+    s3Title: 'Vous ne pouvez pas accéder à l\'app ?',
+    contactP: 'Si vous ne pouvez pas accéder à votre compte ou si vous avez besoin d\'aide pour supprimer vos données, écrivez-nous à :',
+    contactNote: 'Incluez dans le message l\'adresse e-mail associée à votre compte. Nous traiterons votre demande dans un délai maximum de 30 jours.',
+    footerPrivacy: 'Confidentialité', footerTerms: 'Conditions',
+  },
+  de: {
+    pageTitle: 'Konto löschen — WishKeep',
+    metaDesc: 'So löschen Sie Ihr WishKeep-Konto und Ihre Daten.',
+    navBack: '← Zurück zur Startseite',
+    docTitle: 'Konto löschen',
+    docSub: 'So löschen Sie Ihr Konto und alle Ihre WishKeep-Daten',
+    intro: 'Sie können Ihr Konto jederzeit direkt in der App löschen. Der Vorgang ist sofortig und unwiderruflich.',
+    s1Title: 'In der App löschen (empfohlen)',
+    step1: 'Öffnen Sie WishKeep und melden Sie sich bei Ihrem Konto an.',
+    step2: 'Gehen Sie zum Tab <strong>Einstellungen</strong> (Zahnrad-Symbol in der unteren Leiste).',
+    step3: 'Scrollen Sie zum Abschnitt <strong>Konto</strong> und tippen Sie auf <strong>„Konto löschen"</strong>.',
+    step4: 'Bestätigen Sie Ihre Identität, wenn Sie dazu aufgefordert werden (möglicherweise wird Ihr Passwort oder Ihre Google-Anmeldung verlangt).',
+    step5: 'Bestätigen Sie die Löschung im Bestätigungsdialog. Ihr Konto und alle Ihre Daten werden sofort gelöscht.',
+    warningText: '<strong>⚠️ Diese Aktion ist unwiderruflich.</strong> Beim Löschen Ihres Kontos werden dauerhaft entfernt: alle Ihre Wunschlisten, alle Artikel, Ihr Profilbild und Ihre Authentifizierungsdaten. Nach der Löschung können die Daten nicht wiederhergestellt werden.',
+    s2Title: 'Welche Daten werden gelöscht?',
+    s2li1: 'Ihr Benutzerkonto (Firebase Authentication)',
+    s2li2: 'Ihr Profil: Name, E-Mail-Adresse und Profilbild',
+    s2li3: 'Alle Wunschlisten, die Sie erstellt haben',
+    s2li4: 'Alle Artikel in Ihren Listen',
+    s2li5: 'Die Teilungscodes, die Ihren Listen zugeordnet sind',
+    s2note: 'Geteilte Listen anderer Nutzer, an denen Sie als Gast teilgenommen haben, sind nicht betroffen.',
+    s3Title: 'Kein Zugang zur App?',
+    contactP: 'Wenn Sie keinen Zugang zu Ihrem Konto haben oder Hilfe beim Löschen Ihrer Daten benötigen, schreiben Sie uns an:',
+    contactNote: 'Geben Sie in der Nachricht die E-Mail-Adresse an, die mit Ihrem Konto verknüpft ist. Wir bearbeiten Ihre Anfrage innerhalb von maximal 30 Tagen.',
+    footerPrivacy: 'Datenschutz', footerTerms: 'Nutzungsbedingungen',
+  }
+};
+
+(function () {
+  const prefix = (navigator.language || 'es').split('-')[0].toLowerCase();
+  const lang = ['es', 'en', 'fr', 'de'].includes(prefix) ? prefix : 'es';
+  const t = translations[lang];
+
+  document.documentElement.lang = lang;
+  document.title = t.pageTitle;
+  document.querySelector('meta[name="description"]').content = t.metaDesc;
+
+  document.querySelectorAll('[data-i18n]').forEach(el => {
+    const v = t[el.dataset.i18n];
+    if (v !== undefined) el.textContent = v;
+  });
+  document.querySelectorAll('[data-i18n-html]').forEach(el => {
+    const v = t[el.dataset.i18nHtml];
+    if (v !== undefined) el.innerHTML = v;
+  });
+})();
+</script>
 
 </body>
 </html>

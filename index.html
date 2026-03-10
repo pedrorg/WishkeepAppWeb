@@ -9,7 +9,6 @@
   <meta property="og:title" content="WishKeep — Tu lista de deseos, siempre a mano" />
   <meta property="og:description" content="Crea y comparte listas de deseos. Importa productos con un enlace desde Amazon, Zara, IKEA y más." />
   <meta property="og:type" content="website" />
-  <link rel="icon" type="image/png" href="icon.png" />
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
@@ -185,60 +184,59 @@
 <nav>
   <span class="logo">WishKeep</span>
   <div class="nav-links">
-    <a href="#features">Funciones</a>
-    <a href="#como-funciona">Cómo funciona</a>
-    <a href="#precios">Precios</a>
-    <a href="privacy.html">Privacidad</a>
+    <a href="#features" data-i18n="navFeatures">Funciones</a>
+    <a href="#como-funciona" data-i18n="navHow">Cómo funciona</a>
+    <a href="#precios" data-i18n="navPricing">Precios</a>
+    <a href="privacy.html" data-i18n="navPrivacy">Privacidad</a>
   </div>
-  <a href="#descarga" class="btn btn-primary">Descargar gratis</a>
+  <a href="#descarga" class="btn btn-primary" data-i18n="navDownload">Descargar gratis</a>
 </nav>
 
 <!-- HERO -->
 <section style="padding: 0 24px;">
   <div class="hero">
-    <div class="badge">Disponible en Android</div>
-    <h1>Tu lista de deseos,<br /><span>siempre a mano</span></h1>
-    <p>Crea listas de lo que quieres, importa productos con un enlace y compárte las con tu familia o amigos. Sin suscripción.</p>
+    <div class="badge" data-i18n="heroBadge">Disponible en Android</div>
+    <h1 data-i18n-html="heroH1">Tu lista de deseos,<br /><span>siempre a mano</span></h1>
+    <p data-i18n="heroP">Crea listas de lo que quieres, importa productos con un enlace y compárte las con tu familia o amigos. Sin suscripción.</p>
     <div class="hero-cta">
-      <a href="#descarga" class="btn btn-primary">
+      <a href="https://play.google.com/store/apps/details?id=com.wishkeep.wishkeep_app" class="btn btn-primary">
         <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M3.18 23.76A1.5 1.5 0 0 0 4.5 24c.28 0 .57-.08.84-.24l16.5-9.5a1.5 1.5 0 0 0 0-2.61L5.34.25A1.5 1.5 0 0 0 3 1.5v21c0 .52.27.99.18.26z"/></svg>
-        Descargar en Google Play
+        <span data-i18n="heroBtnPlay">Descargar en Google Play</span>
       </a>
-      <a href="#features" class="btn btn-outline">Ver funciones</a>
+      <a href="#features" class="btn btn-outline" data-i18n="heroBtnFeatures">Ver funciones</a>
     </div>
 
     <!-- App mockup -->
     <div class="mockup-wrap">
       <div class="mockup-screen">
-        <div class="mockup-header">Mis listas</div>
+        <div class="mockup-header" data-i18n="mockupHeader">Mis listas</div>
         <div class="mockup-card">
           <div class="mockup-emoji">🎄</div>
           <div>
-            <div class="mockup-title">Navidad 2025</div>
-            <div class="mockup-sub">8 artículos · 234 €</div>
+            <div class="mockup-title" data-i18n="mockupCard1Title">Navidad 2025</div>
+            <div class="mockup-sub" data-i18n="mockupCard1Sub">8 artículos · 234 €</div>
           </div>
-          <div class="mockup-badge">3 personas</div>
+          <div class="mockup-badge" data-i18n="mockupBadge1">3 personas</div>
         </div>
         <div class="mockup-card">
           <div class="mockup-emoji">🎂</div>
           <div>
-            <div class="mockup-title">Mi cumpleaños</div>
-            <div class="mockup-sub">5 artículos · 89 €</div>
+            <div class="mockup-title" data-i18n="mockupCard2Title">Mi cumpleaños</div>
+            <div class="mockup-sub" data-i18n="mockupCard2Sub">5 artículos · 89 €</div>
           </div>
-          <div class="mockup-badge">1 persona</div>
+          <div class="mockup-badge" data-i18n="mockupBadge2">1 persona</div>
         </div>
         <div class="mockup-card">
           <div class="mockup-emoji">🏠</div>
           <div>
-            <div class="mockup-title">Para el piso nuevo</div>
-            <div class="mockup-sub">12 artículos · 1.240 €</div>
+            <div class="mockup-title" data-i18n="mockupCard3Title">Para el piso nuevo</div>
+            <div class="mockup-sub" data-i18n="mockupCard3Sub">12 artículos · 1.240 €</div>
           </div>
         </div>
         <div style="margin-top: auto; text-align: center;">
           <div style="display:inline-block; background: var(--primary); color: #0D1F1C;
-                      border-radius: 50px; padding: 10px 24px; font-weight: 700; font-size: .85rem;">
-            + Nueva lista
-          </div>
+                      border-radius: 50px; padding: 10px 24px; font-weight: 700; font-size: .85rem;"
+               data-i18n="mockupNew">+ Nueva lista</div>
         </div>
       </div>
     </div>
@@ -247,40 +245,40 @@
 
 <!-- FEATURES -->
 <section class="section" id="features">
-  <div class="section-label">Funciones</div>
-  <div class="section-title">Todo lo que necesitas<br />para organizar tus deseos</div>
-  <p class="section-sub">Sin complicaciones. Sin cuotas. Todo lo importante, bien hecho.</p>
+  <div class="section-label" data-i18n="featLabel">Funciones</div>
+  <div class="section-title" data-i18n-html="featTitle">Todo lo que necesitas<br />para organizar tus deseos</div>
+  <p class="section-sub" data-i18n="featSub">Sin complicaciones. Sin cuotas. Todo lo importante, bien hecho.</p>
 
   <div class="features-grid">
     <div class="feature-card">
       <div class="feature-icon">📋</div>
-      <h3>Múltiples listas</h3>
-      <p>Crea una lista para Navidad, otra para tu cumpleaños, otra para la boda… Cada una con su emoji e imagen de portada.</p>
+      <h3 data-i18n="feat1Title">Múltiples listas</h3>
+      <p data-i18n="feat1P">Crea una lista para Navidad, otra para tu cumpleaños, otra para la boda… Cada una con su emoji e imagen de portada.</p>
     </div>
     <div class="feature-card">
       <div class="feature-icon">🔗</div>
-      <h3>Importar desde cualquier tienda</h3>
-      <p>Pega un enlace de Amazon, Zara, IKEA, MediaMarkt… WishKeep extrae el nombre, la imagen y el precio automáticamente.</p>
+      <h3 data-i18n="feat2Title">Importar desde cualquier tienda</h3>
+      <p data-i18n="feat2P">Pega un enlace de Amazon, Zara, IKEA, MediaMarkt… WishKeep extrae el nombre, la imagen y el precio automáticamente.</p>
     </div>
     <div class="feature-card">
       <div class="feature-icon">📤</div>
-      <h3>Compartir con código</h3>
-      <p>Genera un código de 8 caracteres y compártelo. Tus personas ven exactamente lo que quieres. Tú decides quién tiene acceso.</p>
+      <h3 data-i18n="feat3Title">Compartir con código</h3>
+      <p data-i18n="feat3P">Genera un código de 8 caracteres y compártelo. Tus personas ven exactamente lo que quieres. Tú decides quién tiene acceso.</p>
     </div>
     <div class="feature-card">
       <div class="feature-icon">👁️</div>
-      <h3>Privacidad total</h3>
-      <p>Solo las personas con tu código pueden ver tu lista. Sin feeds públicos, sin algoritmos, sin que nadie espíe tus deseos.</p>
+      <h3 data-i18n="feat4Title">Privacidad total</h3>
+      <p data-i18n="feat4P">Solo las personas con tu código pueden ver tu lista. Sin feeds públicos, sin algoritmos, sin que nadie espíe tus deseos.</p>
     </div>
     <div class="feature-card">
       <div class="feature-icon">⭐</div>
-      <h3>Prioridades y notas</h3>
-      <p>Marca cada artículo con prioridad alta, media o baja. Añade notas con talla, color o cualquier detalle importante.</p>
+      <h3 data-i18n="feat5Title">Prioridades y notas</h3>
+      <p data-i18n="feat5P">Marca cada artículo con prioridad alta, media o baja. Añade notas con talla, color o cualquier detalle importante.</p>
     </div>
     <div class="feature-card">
       <div class="feature-icon">☁️</div>
-      <h3>Sincronización en la nube</h3>
-      <p>Tus listas siempre disponibles. Cambia de móvil sin perder nada. Accede desde cualquier dispositivo Android.</p>
+      <h3 data-i18n="feat6Title">Sincronización en la nube</h3>
+      <p data-i18n="feat6P">Tus listas siempre disponibles. Cambia de móvil sin perder nada. Accede desde cualquier dispositivo Android.</p>
     </div>
   </div>
 </section>
@@ -288,25 +286,25 @@
 <!-- HOW IT WORKS -->
 <section class="steps-wrap" id="como-funciona">
   <div class="section">
-    <div class="section-label">Cómo funciona</div>
-    <div class="section-title">En menos de un minuto</div>
-    <p class="section-sub">Sin tutoriales, sin configuraciones. Solo abre la app y empieza.</p>
+    <div class="section-label" data-i18n="howLabel">Cómo funciona</div>
+    <div class="section-title" data-i18n="howTitle">En menos de un minuto</div>
+    <p class="section-sub" data-i18n="howSub">Sin tutoriales, sin configuraciones. Solo abre la app y empieza.</p>
 
     <div class="steps">
       <div class="step">
         <div class="step-num">1</div>
-        <h3>Crea tu lista</h3>
-        <p>Ponle un nombre, un emoji y ya tienes tu primera lista. Gratis, sin tarjeta de crédito.</p>
+        <h3 data-i18n="step1Title">Crea tu lista</h3>
+        <p data-i18n="step1P">Ponle un nombre, un emoji y ya tienes tu primera lista. Gratis, sin tarjeta de crédito.</p>
       </div>
       <div class="step">
         <div class="step-num">2</div>
-        <h3>Añade artículos</h3>
-        <p>Pega el enlace del producto que quieres y WishKeep rellena todo solo. O añade artículos manualmente.</p>
+        <h3 data-i18n="step2Title">Añade artículos</h3>
+        <p data-i18n="step2P">Pega el enlace del producto que quieres y WishKeep rellena todo solo. O añade artículos manualmente.</p>
       </div>
       <div class="step">
         <div class="step-num">3</div>
-        <h3>Comparte con quien quieras</h3>
-        <p>Genera un código y mándalo por WhatsApp. Tus personas ya saben exactamente qué regalarte.</p>
+        <h3 data-i18n="step3Title">Comparte con quien quieras</h3>
+        <p data-i18n="step3P">Genera un código y mándalo por WhatsApp. Tus personas ya saben exactamente qué regalarte.</p>
       </div>
     </div>
   </div>
@@ -314,34 +312,34 @@
 
 <!-- PRICING -->
 <section class="section" id="precios">
-  <div class="section-label">Precios</div>
-  <div class="section-title">Sin suscripciones</div>
-  <p class="section-sub">Gratis para siempre con las funciones básicas. Si quieres más, pagas una vez y listo.</p>
+  <div class="section-label" data-i18n="priceLabel">Precios</div>
+  <div class="section-title" data-i18n="priceTitle">Sin suscripciones</div>
+  <p class="section-sub" data-i18n="priceSub">Gratis para siempre con las funciones básicas. Si quieres más, pagas una vez y listo.</p>
 
   <div class="pricing">
     <div class="plan">
-      <h3>Gratis</h3>
+      <h3 data-i18n="planFreeName">Gratis</h3>
       <div class="price">0 €</div>
-      <div class="price-note">Para siempre</div>
+      <div class="price-note" data-i18n="planFreeNote">Para siempre</div>
       <ul>
-        <li>Hasta 3 listas</li>
-        <li>Hasta 15 artículos por lista</li>
-        <li>Importar desde URL</li>
-        <li>Compartir con código</li>
-        <li>Sincronización en la nube</li>
+        <li data-i18n="planFreeLi1">Hasta 3 listas</li>
+        <li data-i18n="planFreeLi2">Hasta 15 artículos por lista</li>
+        <li data-i18n="planFreeLi3">Importar desde URL</li>
+        <li data-i18n="planFreeLi4">Compartir con código</li>
+        <li data-i18n="planFreeLi5">Sincronización en la nube</li>
       </ul>
     </div>
     <div class="plan featured">
-      <div class="plan-tag">Más popular</div>
+      <div class="plan-tag" data-i18n="planTag">Más popular</div>
       <h3>Premium</h3>
       <div class="price">2,99 €</div>
-      <div class="price-note">Pago único · Sin renovaciones</div>
+      <div class="price-note" data-i18n="planPremNote">Pago único · Sin renovaciones</div>
       <ul>
-        <li>Listas ilimitadas</li>
-        <li>Artículos ilimitados</li>
-        <li>Importar desde URL</li>
-        <li>Compartir con código</li>
-        <li>Sincronización en la nube</li>
+        <li data-i18n="planPremLi1">Listas ilimitadas</li>
+        <li data-i18n="planPremLi2">Artículos ilimitados</li>
+        <li data-i18n="planPremLi3">Importar desde URL</li>
+        <li data-i18n="planPremLi4">Compartir con código</li>
+        <li data-i18n="planPremLi5">Sincronización en la nube</li>
       </ul>
     </div>
   </div>
@@ -350,26 +348,265 @@
 <!-- CTA -->
 <section id="descarga">
   <div class="cta-section">
-    <h2>¿Para qué esperar a que te pregunten qué quieres?</h2>
-    <p>Crea tu primera lista de deseos ahora. Gratis, en un minuto, sin complicaciones.</p>
+    <h2 data-i18n="ctaH2">¿Para qué esperar a que te pregunten qué quieres?</h2>
+    <p data-i18n="ctaP">Crea tu primera lista de deseos ahora. Gratis, en un minuto, sin complicaciones.</p>
     <a href="https://play.google.com/store/apps/details?id=com.wishkeep.wishkeep_app"
-       class="btn btn-primary" style="font-size: 1rem; padding: 14px 32px;">
+       class="btn btn-primary" style="font-size: 1rem; padding: 14px 32px;" data-i18n="ctaBtn">
       Descargar WishKeep — Gratis
     </a>
-    <p style="margin-top: 16px; font-size: .8rem; color: var(--muted);">Disponible para Android</p>
+    <p style="margin-top: 16px; font-size: .8rem; color: var(--muted);" data-i18n="ctaNote">Disponible para Android</p>
   </div>
 </section>
 
 <!-- FOOTER -->
 <footer>
   <span class="logo">WishKeep</span>
-  <p>© 2025 WishKeep. Hecho con ♥</p>
+  <p data-i18n="footerCopy">© 2025 WishKeep. Hecho con ♥</p>
   <div class="footer-links">
-    <a href="privacy.html">Política de Privacidad</a>
-    <a href="terms.html">Términos de Servicio</a>
-    <a href="mailto:wishkeepapp@gmail.com">Contacto</a>
+    <a href="privacy.html" data-i18n="footerPrivacy">Política de Privacidad</a>
+    <a href="terms.html" data-i18n="footerTerms">Términos de Servicio</a>
+    <a href="mailto:wishkeepapp@gmail.com" data-i18n="footerContact">Contacto</a>
   </div>
 </footer>
+
+<script>
+const translations = {
+  es: {
+    pageTitle: 'WishKeep — Tu lista de deseos, siempre a mano',
+    metaDesc: 'Crea y comparte listas de deseos. Importa productos con un enlace desde Amazon, Zara, IKEA y más. Gratis, sin suscripciones.',
+    navFeatures: 'Funciones', navHow: 'Cómo funciona', navPricing: 'Precios',
+    navPrivacy: 'Privacidad', navDownload: 'Descargar gratis',
+    heroBadge: 'Disponible en Android',
+    heroH1: 'Tu lista de deseos,<br /><span>siempre a mano</span>',
+    heroP: 'Crea listas de lo que quieres, importa productos con un enlace y compárte las con tu familia o amigos. Sin suscripción.',
+    heroBtnPlay: 'Descargar en Google Play', heroBtnFeatures: 'Ver funciones',
+    mockupHeader: 'Mis listas', mockupCard1Title: 'Navidad 2025',
+    mockupCard1Sub: '8 artículos · 234 €', mockupBadge1: '3 personas',
+    mockupCard2Title: 'Mi cumpleaños', mockupCard2Sub: '5 artículos · 89 €',
+    mockupBadge2: '1 persona', mockupCard3Title: 'Para el piso nuevo',
+    mockupCard3Sub: '12 artículos · 1.240 €', mockupNew: '+ Nueva lista',
+    featLabel: 'Funciones',
+    featTitle: 'Todo lo que necesitas<br />para organizar tus deseos',
+    featSub: 'Sin complicaciones. Sin cuotas. Todo lo importante, bien hecho.',
+    feat1Title: 'Múltiples listas',
+    feat1P: 'Crea una lista para Navidad, otra para tu cumpleaños, otra para la boda… Cada una con su emoji e imagen de portada.',
+    feat2Title: 'Importar desde cualquier tienda',
+    feat2P: 'Pega un enlace de Amazon, Zara, IKEA, MediaMarkt… WishKeep extrae el nombre, la imagen y el precio automáticamente.',
+    feat3Title: 'Compartir con código',
+    feat3P: 'Genera un código de 8 caracteres y compártelo. Tus personas ven exactamente lo que quieres. Tú decides quién tiene acceso.',
+    feat4Title: 'Privacidad total',
+    feat4P: 'Solo las personas con tu código pueden ver tu lista. Sin feeds públicos, sin algoritmos, sin que nadie espíe tus deseos.',
+    feat5Title: 'Prioridades y notas',
+    feat5P: 'Marca cada artículo con prioridad alta, media o baja. Añade notas con talla, color o cualquier detalle importante.',
+    feat6Title: 'Sincronización en la nube',
+    feat6P: 'Tus listas siempre disponibles. Cambia de móvil sin perder nada. Accede desde cualquier dispositivo Android.',
+    howLabel: 'Cómo funciona', howTitle: 'En menos de un minuto',
+    howSub: 'Sin tutoriales, sin configuraciones. Solo abre la app y empieza.',
+    step1Title: 'Crea tu lista',
+    step1P: 'Ponle un nombre, un emoji y ya tienes tu primera lista. Gratis, sin tarjeta de crédito.',
+    step2Title: 'Añade artículos',
+    step2P: 'Pega el enlace del producto que quieres y WishKeep rellena todo solo. O añade artículos manualmente.',
+    step3Title: 'Comparte con quien quieras',
+    step3P: 'Genera un código y mándalo por WhatsApp. Tus personas ya saben exactamente qué regalarte.',
+    priceLabel: 'Precios', priceTitle: 'Sin suscripciones',
+    priceSub: 'Gratis para siempre con las funciones básicas. Si quieres más, pagas una vez y listo.',
+    planFreeName: 'Gratis', planFreeNote: 'Para siempre',
+    planFreeLi1: 'Hasta 3 listas', planFreeLi2: 'Hasta 15 artículos por lista',
+    planFreeLi3: 'Importar desde URL', planFreeLi4: 'Compartir con código',
+    planFreeLi5: 'Sincronización en la nube', planTag: 'Más popular',
+    planPremNote: 'Pago único · Sin renovaciones',
+    planPremLi1: 'Listas ilimitadas', planPremLi2: 'Artículos ilimitados',
+    planPremLi3: 'Importar desde URL', planPremLi4: 'Compartir con código',
+    planPremLi5: 'Sincronización en la nube',
+    ctaH2: '¿Para qué esperar a que te pregunten qué quieres?',
+    ctaP: 'Crea tu primera lista de deseos ahora. Gratis, en un minuto, sin complicaciones.',
+    ctaBtn: 'Descargar WishKeep — Gratis', ctaNote: 'Disponible para Android',
+    footerCopy: '© 2025 WishKeep. Hecho con ♥', footerPrivacy: 'Política de Privacidad',
+    footerTerms: 'Términos de Servicio', footerContact: 'Contacto',
+  },
+  en: {
+    pageTitle: 'WishKeep — Your wish list, always at hand',
+    metaDesc: 'Create and share wish lists. Import products with a link from Amazon, Zara, IKEA and more. Free, no subscriptions.',
+    navFeatures: 'Features', navHow: 'How it works', navPricing: 'Pricing',
+    navPrivacy: 'Privacy', navDownload: 'Download free',
+    heroBadge: 'Available on Android',
+    heroH1: 'Your wish list,<br /><span>always at hand</span>',
+    heroP: 'Create lists of what you want, import products with a link and share them with family or friends. No subscription.',
+    heroBtnPlay: 'Download on Google Play', heroBtnFeatures: 'See features',
+    mockupHeader: 'My lists', mockupCard1Title: 'Christmas 2025',
+    mockupCard1Sub: '8 items · €234', mockupBadge1: '3 people',
+    mockupCard2Title: 'My birthday', mockupCard2Sub: '5 items · €89',
+    mockupBadge2: '1 person', mockupCard3Title: 'For the new flat',
+    mockupCard3Sub: '12 items · €1,240', mockupNew: '+ New list',
+    featLabel: 'Features',
+    featTitle: 'Everything you need<br />to organize your wishes',
+    featSub: 'No fuss. No fees. Everything that matters, done right.',
+    feat1Title: 'Multiple lists',
+    feat1P: 'Create a list for Christmas, one for your birthday, one for the wedding… Each with its own emoji and cover image.',
+    feat2Title: 'Import from any store',
+    feat2P: 'Paste a link from Amazon, Zara, IKEA, MediaMarkt… WishKeep automatically extracts the name, image and price.',
+    feat3Title: 'Share with a code',
+    feat3P: 'Generate an 8-character code and share it. Your people see exactly what you want. You decide who has access.',
+    feat4Title: 'Total privacy',
+    feat4P: 'Only people with your code can see your list. No public feeds, no algorithms, no one spying on your wishes.',
+    feat5Title: 'Priorities and notes',
+    feat5P: 'Mark each item with high, medium or low priority. Add notes with size, colour or any important detail.',
+    feat6Title: 'Cloud sync',
+    feat6P: 'Your lists always available. Switch phones without losing anything. Access from any Android device.',
+    howLabel: 'How it works', howTitle: 'In less than a minute',
+    howSub: 'No tutorials, no setup. Just open the app and start.',
+    step1Title: 'Create your list',
+    step1P: 'Give it a name, an emoji and you have your first list. Free, no credit card.',
+    step2Title: 'Add items',
+    step2P: 'Paste the link to the product you want and WishKeep fills everything in automatically. Or add items manually.',
+    step3Title: 'Share with anyone',
+    step3P: 'Generate a code and send it on WhatsApp. Your people know exactly what to get you.',
+    priceLabel: 'Pricing', priceTitle: 'No subscriptions',
+    priceSub: 'Free forever with basic features. If you want more, pay once and that\'s it.',
+    planFreeName: 'Free', planFreeNote: 'Forever',
+    planFreeLi1: 'Up to 3 lists', planFreeLi2: 'Up to 15 items per list',
+    planFreeLi3: 'Import from URL', planFreeLi4: 'Share with code',
+    planFreeLi5: 'Cloud sync', planTag: 'Most popular',
+    planPremNote: 'One-time payment · No renewals',
+    planPremLi1: 'Unlimited lists', planPremLi2: 'Unlimited items',
+    planPremLi3: 'Import from URL', planPremLi4: 'Share with code',
+    planPremLi5: 'Cloud sync',
+    ctaH2: 'Why wait to be asked what you want?',
+    ctaP: 'Create your first wish list now. Free, in a minute, no fuss.',
+    ctaBtn: 'Download WishKeep — Free', ctaNote: 'Available for Android',
+    footerCopy: '© 2025 WishKeep. Made with ♥', footerPrivacy: 'Privacy Policy',
+    footerTerms: 'Terms of Service', footerContact: 'Contact',
+  },
+  fr: {
+    pageTitle: 'WishKeep — Ta liste de souhaits, toujours à portée',
+    metaDesc: 'Crée et partage des listes de souhaits. Importe des produits avec un lien depuis Amazon, Zara, IKEA et plus. Gratuit, sans abonnement.',
+    navFeatures: 'Fonctionnalités', navHow: 'Comment ça marche', navPricing: 'Tarifs',
+    navPrivacy: 'Confidentialité', navDownload: 'Télécharger',
+    heroBadge: 'Disponible sur Android',
+    heroH1: 'Ta liste de souhaits,<br /><span>toujours à portée</span>',
+    heroP: 'Crée des listes de ce que tu veux, importe des produits avec un lien et partage-les avec ta famille ou tes amis. Sans abonnement.',
+    heroBtnPlay: 'Télécharger sur Google Play', heroBtnFeatures: 'Voir les fonctionnalités',
+    mockupHeader: 'Mes listes', mockupCard1Title: 'Noël 2025',
+    mockupCard1Sub: '8 articles · 234 €', mockupBadge1: '3 personnes',
+    mockupCard2Title: 'Mon anniversaire', mockupCard2Sub: '5 articles · 89 €',
+    mockupBadge2: '1 personne', mockupCard3Title: 'Pour le nouvel appart',
+    mockupCard3Sub: '12 articles · 1 240 €', mockupNew: '+ Nouvelle liste',
+    featLabel: 'Fonctionnalités',
+    featTitle: 'Tout ce qu\'il te faut<br />pour organiser tes souhaits',
+    featSub: 'Sans complications. Sans frais. Tout l\'essentiel, bien fait.',
+    feat1Title: 'Plusieurs listes',
+    feat1P: 'Crée une liste pour Noël, une pour ton anniversaire, une pour le mariage… Chacune avec son emoji et son image de couverture.',
+    feat2Title: 'Importer depuis n\'importe quelle boutique',
+    feat2P: 'Colle un lien d\'Amazon, Zara, IKEA, MediaMarkt… WishKeep extrait automatiquement le nom, l\'image et le prix.',
+    feat3Title: 'Partager avec un code',
+    feat3P: 'Génère un code de 8 caractères et partage-le. Tes proches voient exactement ce que tu veux. Tu décides qui a accès.',
+    feat4Title: 'Confidentialité totale',
+    feat4P: 'Seules les personnes avec ton code peuvent voir ta liste. Pas de fils publics, pas d\'algorithmes, personne n\'espionne tes souhaits.',
+    feat5Title: 'Priorités et notes',
+    feat5P: 'Marque chaque article en priorité haute, moyenne ou basse. Ajoute des notes avec la taille, la couleur ou tout autre détail.',
+    feat6Title: 'Synchronisation cloud',
+    feat6P: 'Tes listes toujours disponibles. Change de téléphone sans rien perdre. Accède depuis n\'importe quel appareil Android.',
+    howLabel: 'Comment ça marche', howTitle: 'En moins d\'une minute',
+    howSub: 'Pas de tutoriels, pas de configuration. Ouvre l\'appli et commence.',
+    step1Title: 'Crée ta liste',
+    step1P: 'Donne-lui un nom, un emoji et tu as ta première liste. Gratuit, sans carte bancaire.',
+    step2Title: 'Ajoute des articles',
+    step2P: 'Colle le lien du produit que tu veux et WishKeep remplit tout automatiquement. Ou ajoute des articles manuellement.',
+    step3Title: 'Partage avec qui tu veux',
+    step3P: 'Génère un code et envoie-le sur WhatsApp. Tes proches savent exactement quoi t\'offrir.',
+    priceLabel: 'Tarifs', priceTitle: 'Sans abonnements',
+    priceSub: 'Gratuit pour toujours avec les fonctions de base. Si tu veux plus, tu paies une fois et c\'est tout.',
+    planFreeName: 'Gratuit', planFreeNote: 'Pour toujours',
+    planFreeLi1: 'Jusqu\'à 3 listes', planFreeLi2: 'Jusqu\'à 15 articles par liste',
+    planFreeLi3: 'Importer depuis URL', planFreeLi4: 'Partager avec un code',
+    planFreeLi5: 'Synchronisation cloud', planTag: 'Le plus populaire',
+    planPremNote: 'Paiement unique · Sans renouvellement',
+    planPremLi1: 'Listes illimitées', planPremLi2: 'Articles illimités',
+    planPremLi3: 'Importer depuis URL', planPremLi4: 'Partager avec un code',
+    planPremLi5: 'Synchronisation cloud',
+    ctaH2: 'Pourquoi attendre qu\'on te demande ce que tu veux ?',
+    ctaP: 'Crée ta première liste de souhaits maintenant. Gratuit, en une minute, sans complications.',
+    ctaBtn: 'Télécharger WishKeep — Gratuit', ctaNote: 'Disponible pour Android',
+    footerCopy: '© 2025 WishKeep. Fait avec ♥', footerPrivacy: 'Politique de confidentialité',
+    footerTerms: 'Conditions d\'utilisation', footerContact: 'Contact',
+  },
+  de: {
+    pageTitle: 'WishKeep — Deine Wunschliste, immer griffbereit',
+    metaDesc: 'Erstelle und teile Wunschlisten. Importiere Produkte mit einem Link von Amazon, Zara, IKEA und mehr. Kostenlos, ohne Abonnement.',
+    navFeatures: 'Funktionen', navHow: 'So funktioniert\'s', navPricing: 'Preise',
+    navPrivacy: 'Datenschutz', navDownload: 'Kostenlos laden',
+    heroBadge: 'Für Android verfügbar',
+    heroH1: 'Deine Wunschliste,<br /><span>immer griffbereit</span>',
+    heroP: 'Erstelle Listen mit dem, was du möchtest, importiere Produkte per Link und teile sie mit Familie oder Freunden. Kein Abonnement.',
+    heroBtnPlay: 'Bei Google Play herunterladen', heroBtnFeatures: 'Funktionen ansehen',
+    mockupHeader: 'Meine Listen', mockupCard1Title: 'Weihnachten 2025',
+    mockupCard1Sub: '8 Artikel · 234 €', mockupBadge1: '3 Personen',
+    mockupCard2Title: 'Mein Geburtstag', mockupCard2Sub: '5 Artikel · 89 €',
+    mockupBadge2: '1 Person', mockupCard3Title: 'Für die neue Wohnung',
+    mockupCard3Sub: '12 Artikel · 1.240 €', mockupNew: '+ Neue Liste',
+    featLabel: 'Funktionen',
+    featTitle: 'Alles, was du brauchst,<br />um deine Wünsche zu organisieren',
+    featSub: 'Unkompliziert. Ohne Gebühren. Alles Wichtige, richtig gemacht.',
+    feat1Title: 'Mehrere Listen',
+    feat1P: 'Erstelle eine Liste für Weihnachten, eine für deinen Geburtstag, eine für die Hochzeit… Jede mit eigenem Emoji und Titelbild.',
+    feat2Title: 'Aus jedem Shop importieren',
+    feat2P: 'Füge einen Link von Amazon, Zara, IKEA, MediaMarkt ein… WishKeep extrahiert automatisch Name, Bild und Preis.',
+    feat3Title: 'Mit Code teilen',
+    feat3P: 'Erstelle einen 8-stelligen Code und teile ihn. Deine Leute sehen genau, was du möchtest. Du entscheidest, wer Zugang hat.',
+    feat4Title: 'Vollständige Privatsphäre',
+    feat4P: 'Nur Personen mit deinem Code können deine Liste sehen. Keine öffentlichen Feeds, keine Algorithmen, niemand spioniert deine Wünsche aus.',
+    feat5Title: 'Prioritäten und Notizen',
+    feat5P: 'Markiere jeden Artikel mit hoher, mittlerer oder niedriger Priorität. Füge Notizen mit Größe, Farbe oder anderen wichtigen Details hinzu.',
+    feat6Title: 'Cloud-Synchronisierung',
+    feat6P: 'Deine Listen immer verfügbar. Wechsle das Handy, ohne etwas zu verlieren. Zugriff von jedem Android-Gerät.',
+    howLabel: 'So funktioniert\'s', howTitle: 'In weniger als einer Minute',
+    howSub: 'Keine Tutorials, keine Einrichtung. Einfach die App öffnen und loslegen.',
+    step1Title: 'Erstelle deine Liste',
+    step1P: 'Gib ihr einen Namen, ein Emoji und du hast deine erste Liste. Kostenlos, ohne Kreditkarte.',
+    step2Title: 'Artikel hinzufügen',
+    step2P: 'Füge den Link zum gewünschten Produkt ein und WishKeep füllt alles automatisch aus. Oder füge Artikel manuell hinzu.',
+    step3Title: 'Mit jedem teilen',
+    step3P: 'Erstelle einen Code und schicke ihn per WhatsApp. Deine Leute wissen genau, was sie dir schenken sollen.',
+    priceLabel: 'Preise', priceTitle: 'Keine Abonnements',
+    priceSub: 'Für immer kostenlos mit den Grundfunktionen. Wenn du mehr möchtest, zahlst du einmal und fertig.',
+    planFreeName: 'Kostenlos', planFreeNote: 'Für immer',
+    planFreeLi1: 'Bis zu 3 Listen', planFreeLi2: 'Bis zu 15 Artikel pro Liste',
+    planFreeLi3: 'Import per URL', planFreeLi4: 'Mit Code teilen',
+    planFreeLi5: 'Cloud-Synchronisierung', planTag: 'Beliebteste',
+    planPremNote: 'Einmalzahlung · Keine Verlängerung',
+    planPremLi1: 'Unbegrenzte Listen', planPremLi2: 'Unbegrenzte Artikel',
+    planPremLi3: 'Import per URL', planPremLi4: 'Mit Code teilen',
+    planPremLi5: 'Cloud-Synchronisierung',
+    ctaH2: 'Warum warten, bis jemand fragt, was du willst?',
+    ctaP: 'Erstelle jetzt deine erste Wunschliste. Kostenlos, in einer Minute, unkompliziert.',
+    ctaBtn: 'WishKeep herunterladen — Kostenlos', ctaNote: 'Für Android verfügbar',
+    footerCopy: '© 2025 WishKeep. Mit ♥ gemacht', footerPrivacy: 'Datenschutzrichtlinie',
+    footerTerms: 'Nutzungsbedingungen', footerContact: 'Kontakt',
+  }
+};
+
+(function () {
+  const prefix = (navigator.language || 'es').split('-')[0].toLowerCase();
+  const lang = ['es', 'en', 'fr', 'de'].includes(prefix) ? prefix : 'es';
+  const t = translations[lang];
+
+  document.documentElement.lang = lang;
+  document.title = t.pageTitle;
+  document.querySelector('meta[name="description"]').content = t.metaDesc;
+  document.querySelector('meta[property="og:title"]').content = t.pageTitle;
+  document.querySelector('meta[property="og:description"]').content = t.metaDesc;
+
+  document.querySelectorAll('[data-i18n]').forEach(el => {
+    const v = t[el.dataset.i18n];
+    if (v !== undefined) el.textContent = v;
+  });
+
+  document.querySelectorAll('[data-i18n-html]').forEach(el => {
+    const v = t[el.dataset.i18nHtml];
+    if (v !== undefined) el.innerHTML = v;
+  });
+})();
+</script>
 
 </body>
 </html>
